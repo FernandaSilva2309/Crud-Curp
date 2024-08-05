@@ -1,0 +1,94 @@
+/* Contenedor del formulario */
+.add-user-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que salga del contenedor */
+  }
+  
+  .add-user-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('https://i.pinimg.com/originals/c0/3d/03/c03d039eb761879aa8b6fa2059b06a05.jpg'); /* URL de la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que se vea más pequeña */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    transform: translate(-50%, -50%) rotate(270deg); /* Rota la imagen 270 grados y la centra */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+  }
+  
+  .add-user-content {
+    background-color: rgba(249, 249, 249, 0.95); /* Fondo blanco semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative; /* Necesario para el z-index */
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+  }
+  
+  /* Estilo del título */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo de los campos del formulario */
+  mat-form-field {
+    width: 100%;
+    max-width: 500px; /* Máximo ancho del formulario */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo del fondo del campo del formulario */
+  .mat-form-field .mat-form-field-infix {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  /* Contenedor de botones de acción */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px; /* Asegura que los botones estén alineados con el ancho del formulario */
+  }
+  
+  /* Estilo general de los botones */
+  button {
+    margin-top: 10px;
+  }
+  
+  /* Estilo del botón de enviar */
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    flex: 1; /* Permite que el botón ocupe el máximo ancho posible */
+  }
+  
+  /* Estilo del botón de enviar al pasar el ratón */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo del botón de cancelar */
+  button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    flex: 1; /* Permite que el botón ocupe el máximo ancho posible */
+    margin-left: 10px; /* Añade margen entre los botones */
+  }
+  
+  /* Estilo del botón de cancelar al pasar el ratón */
+  button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  

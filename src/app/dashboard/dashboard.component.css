@@ -1,0 +1,54 @@
+/* dashboard.component.css */
+
+.table-container {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Para asegurar que los bordes redondeados se apliquen a la tabla */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+}
+
+.custom-table {
+  width: 100%;
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  border-collapse: separate; /* Para permitir bordes redondeados */
+  border-spacing: 0; /* Espacio entre celdas */
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc; /* Línea de separación clara */
+}
+
+.custom-table th {
+  background-color: #f5f5f5; /* Fondo claro para el encabezado */
+  color: #000; /* Texto negro */
+}
+
+.custom-table td {
+  color: #000; /* Texto negro */
+}
+
+.custom-table tr:hover {
+  background-color: #f0f0f0; /* Fondo claro al pasar el ratón */
+}
+
+.mat-paginator {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  border-top: 1px solid #ccc; /* Línea de separación clara */
+}
+
+.mat-form-field {
+  color: #000; /* Texto negro */
+}
+
+.mat-paginator .mat-button {
+  color: #000; /* Texto negro */
+}
+
+.mat-paginator .mat-button-disabled {
+  color: rgba(0, 0, 0, 0.3); /* Texto negro con opacidad */
+}

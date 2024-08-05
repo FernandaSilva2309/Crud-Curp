@@ -1,0 +1,40 @@
+<!-- curp-form.component.html -->
+<div class="background">
+  <div class="form-container">
+    <h2>Registrar Nueva CURP</h2>
+    <form (ngSubmit)="registerCurp()">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.nombre" name="nombre" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Apellido Paterno</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.apellido_paterno" name="apellido_paterno" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Apellido Materno</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.apellido_materno" name="apellido_materno" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Fecha de Nacimiento</mat-label>
+        <input matInput type="date" [(ngModel)]="newCurp.fecha_nacimiento" name="fecha_nacimiento" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Entidad</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.entidad" name="entidad" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Sexo</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.sexo" name="sexo" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>CURP</mat-label>
+        <input matInput type="text" [(ngModel)]="newCurp.curp" name="curp" required>
+      </mat-form-field>
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit">Registrar</button>
+        <button mat-raised-button color="warn" (click)="goBack()">Regresar</button>
+      </div>
+    </form>
+  </div>
+</div>

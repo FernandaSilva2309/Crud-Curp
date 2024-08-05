@@ -1,0 +1,65 @@
+/* login.component.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    background: url('https://i.pinimg.com/564x/6f/03/38/6f033843bc8d724960f1adc05f1496d8.jp') no-repeat center center fixed; /* Ajusta la ruta de la imagen */
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-container button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #e50062;
+}
+
+.login-container small {
+    color: #ff4081;
+}
+
+.login-container a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

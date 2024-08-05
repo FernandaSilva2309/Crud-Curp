@@ -1,0 +1,66 @@
+/* user-list.component.css */
+.user-list-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que salga del contenedor */
+  }
+  
+  .user-list-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('https://i.pinimg.com/originals/c0/3d/03/c03d039eb761879aa8b6fa2059b06a05.jpg'); /* URL de la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen para que se vea más pequeña */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    transform: translate(-50%, -50%) rotate(270deg); /* Rota la imagen 270 grados y la centra */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+  }
+  
+  .user-list {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px; /* Aumenta el padding para un diseño más espacioso */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 1000px; /* Aumenta el ancho de la tabla */
+    overflow-x: auto;
+    position: relative; /* Necesario para el z-index */
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    font-size: 0.85rem; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 4px 8px; /* Aumenta el padding de las celdas para mejor separación */
+  }
+  
+  mat-header-row, mat-row {
+    height: 36px; /* Aumenta la altura de las filas para una mejor visualización */
+  }
+  
+  .edit-btn, .delete-btn {
+    font-size: 0.85rem; /* Aumenta el tamaño de los iconos para mejor visibilidad */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Aumenta el margen inferior para un espaciado más adecuado */
+    font-size: 1.2rem; /* Aumenta el tamaño del encabezado */
+  }
+  

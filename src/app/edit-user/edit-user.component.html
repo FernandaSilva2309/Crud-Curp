@@ -1,0 +1,32 @@
+<mat-form-field appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="user.nombre">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Apellido Paterno</mat-label>
+    <input matInput [(ngModel)]="user.apellido_paterno">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Apellido Materno</mat-label>
+    <input matInput [(ngModel)]="user.apellido_materno">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Fecha de Nacimiento</mat-label>
+    <input matInput [(ngModel)]="user.fecha_nacimiento">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Entidad</mat-label>
+    <input matInput [(ngModel)]="user.entidad">
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Sexo</mat-label>
+    <input matInput [(ngModel)]="user.sexo">
+  </mat-form-field>
+  
+  <button mat-raised-button color="primary" (click)="saveChanges()">Guardar Cambios</button>
+  
